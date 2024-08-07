@@ -1,0 +1,82 @@
+без приставок: время обучения около 15 минут, точность 80% на датасете, страдает от смещения относительно центра
+lr = 0.005
+momentum = 0.9
+numEpochs = 15
+int batchSize = 128
+
+v1
+
+lr = 0.0001
+momentum = 0.9
+numEpochs = 25
+стало хуже, точность упала до 60, время обучения 25 минут
+
+
+уменьшение количества эпох до 8 роняет нахрен все
+
+
+v2
+lr = 0.005
+momentum = 0.9
+numEpochs = 17
+batchSize = 512
+
+v3  -- время обучения: больше часа. 75% точности, но самое логичное распределение
+lr = 0.001
+momentum = 0.9
+numEpochs = 50
+batchSize = 512
+
+flip10 -- 3 часа 20 минут
+lr = 0.001
+momentum = 0.9
+numEpochs = 50
+batchSize = 512
+
+v4
+l2 = 0.001
+lr = 0.001
+momentum = 0.9
+numEpochs = 15
+batchSize = 128
+
+convV2
+l2 = 0.001
+lr = 0.001
+momentum = 0.9
+numEpochs = 15
+batchSize = 128
+kernel 1 7x7
+kernel 2 5x5
+
+V5
+l2 = 0.005
+lr = 0.001
+momentum = 0.95
+numEpochs = 15
+batchSize = 128
+kernel 1 7x7
+kernel 2 5x5
+nout 10 and 20
+
+V6 невероятно дикие 91% точности, датасет: 10 поворотов. Уже хорошо подходит для классификации
+l2 = 0.005
+lr = 0.005
+momentum = 0.9
+numEpochs = 15
+batchSize = 128
+kernel 1 7x7
+kernel 2 5x5
+nOut 10 20 200
+
+V6 f10s20 92% точности, зато нормальная форма определяется только как нормальная
+numEpochs = 25
+
+V6_f10s20
+вроде как 94% точности
+
+trained_model_RBC_V6_f10s10
+типо лучшая
+
+500 89%
+см. одноименный конфиг

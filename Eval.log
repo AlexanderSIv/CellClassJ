@@ -1,0 +1,25 @@
+мая 27, 2024 9:00:19 PM org.example.EvalTrainedModel main
+INFO: *******LOADING NN*******
+мая 27, 2024 9:00:20 PM org.example.EvalTrainedModel main
+INFO: ******EVALUATING MODEL*****
+мая 27, 2024 9:00:21 PM org.example.EvalTrainedModel main
+INFO: 
+
+========================Evaluation Metrics========================
+ # of classes:    3
+ Accuracy:        0,9368
+ Precision:       0,9373
+ Recall:          0,9445
+ F1 Score:        0,9394
+Precision, recall & F1: macro-averaged (equally weighted avg. of 3 classes)
+
+
+=========================Confusion Matrix=========================
+  0  1  2
+----------
+ 76  1  0 | 0 = 0
+  8 74  2 | 1 = 1
+  0  1 28 | 2 = 2
+
+Confusion matrix format: Actual (rowClass) predicted as (columnClass) N times
+==================================================================
